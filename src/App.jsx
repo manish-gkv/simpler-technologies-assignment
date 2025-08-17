@@ -1,7 +1,7 @@
 import './App.css'
 import NavBar from './components/NavBar'
 import SignUp from './components/SignUp'
-import UserCard from './components/UserCard'
+import Home from './components/Home'
 import { Route, Routes } from 'react-router-dom'
 function App() {
   
@@ -9,7 +9,7 @@ function App() {
     <>
       <NavBar />
       <Routes>
-        <Route path="/" element={<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}><UserCard name="Manish" email="manishkumarslmp@gmail.com" /></div>} />
+        <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/about" element={<div>About Us</div>} />
         <Route path="/contact" element={<div>Contact Us</div>} />
